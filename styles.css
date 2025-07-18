@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+body {
+  max-width: 100%;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.container {
+  max-width: 1277px;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.button {
+  width: 174px;
+  height: 56px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  height: 173px;
+}
+
+.delivery-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.ad-banner-info {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 9px;
+}
+
+.header__ad-banner {
+  width: 100%;
+  height: 41px;
+  background-color: #2a254b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 477px;
+}
+
+.close-button {
+  margin-right: 16px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header__logo {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-icon {
+  margin-left: 28px;
+  width: 16px;
+  height: 16px;
+}
+
+.basket-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.profile-icon {
+  margin-right: 28px;
+  width: 16px;
+  height: 16px;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.header__logo-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.divider {
+  width: 1386px;
+  height: 1px;
+  background-color: #0000001a;
+  display: flex;
+  justify-self: center;
+}
+
+.header__menu-list {
+  font-size: 16px;
+  font-weight: 400;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 44px;
+}
+
+.header__menu-link {
+  color: #726e8d;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: 704px;
+  object-fit: cover;
+}
+
+.hero__info {
+  position: absolute;
+  width: 630px;
+  height: 444px;
+  top: 130px;
+  left: 730px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 140%;
+  color: #22202e;
+  padding-left: 56px;
+  margin: 0;
+  padding-top: 48px;
+}
+
+.hero-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #5b5676;
+  padding-left: 56px;
+  margin-bottom: 157px;
+}
+
+.hero__button {
+  width: 174px;
+  height: 56px;
+  padding-left: 56px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #2a254b;
+}
+
+.advantages__title {
+  width: 100%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: #2a254b;
+  display: flex;
+  justify-content: center;
+}
+
+.advantages {
+  display: flex;
+}
+
+.advantages__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 22px;
+}
+
+.advantages__item {
+  width: 305px;
+  height: 244px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.advantages__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.advantages__item-title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #2a254b;
+}
+
+.advantages__item-card {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2a254b;
+}
+
+.collection__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.collection__item-card {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: #2a254b;
+}
+
+.collection__button {
+  width: 174px;
+  height: 56px;
+  border: none;
+  border-radius: 8px;
+  background-color: #fafafa;
+  cursor: pointer;
+  color: #2a254b;
+}
+
+.brand {
+  width: 100%;
+  height: 598px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.brand__info {
+  width: 634px;
+  height: 478px;
+  background-color: #2a254b;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  padding-left: 64px;
+}
+
+.brand__title {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+}
+
+.brand__button {
+  background-color: #f9f9f926;
+  color: #ffffff;
+  opacity: 0.85;
+}
