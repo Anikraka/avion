@@ -7,6 +7,7 @@ body {
 
 .container {
   max-width: 1277px;
+  margin: auto;
 }
 
 .wrapper {
@@ -192,6 +193,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 0;
   gap: 22px;
 }
 
@@ -222,11 +224,18 @@ body {
   color: #2a254b;
 }
 
+.collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .collection__list {
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 0;
   gap: 20px;
 }
 
@@ -238,13 +247,9 @@ body {
 }
 
 .collection__button {
-  width: 174px;
-  height: 56px;
-  border: none;
-  border-radius: 8px;
   background-color: #fafafa;
-  cursor: pointer;
   color: #2a254b;
+  margin-top: 48px;
 }
 
 .brand {
@@ -258,7 +263,7 @@ body {
 }
 
 .brand__info {
-  width: 634px;
+  width: 630px;
   height: 478px;
   background-color: #2a254b;
   border-radius: 8px;
@@ -274,10 +279,13 @@ body {
   font-weight: 400;
   font-size: 32px;
   line-height: 100%;
+  padding-top: 64px;
+  margin: 0;
 }
 
 .brand__button {
   background-color: #f9f9f926;
   color: #ffffff;
   opacity: 0.85;
+  margin-top: 198px;
 }
