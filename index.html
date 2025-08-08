@@ -15,6 +15,13 @@
       <header class="header">
         <div class="header__body">
           <div class="header__ad-banner">
+            <button
+              class="close-button"
+              type="button"
+              style="visibility: hidden"
+            >
+              <img src="./images/icons/cross.svg" alt="cross" />
+            </button>
             <div class="ad-banner-info">
               <img
                 src="./images/icons/delivery.svg"
@@ -30,26 +37,30 @@
             </button>
           </div>
           <div class="header__logo">
-            <img
-              src="./images/icons/search.svg"
-              alt="search"
+            <input
+              type="image"
               class="search-icon"
+              src="./images/icons/search.svg"
             />
-            <p class="header-title">Avion</p>
+            <a class="header-title" href="">Avion</a>
             <div class="header__logo-icons">
-              <img
-                src="./images/icons/basket.svg"
-                alt="basket"
-                class="basket-icon"
-              />
-              <img
-                src="./images/icons/profile.svg"
-                alt="profile"
-                class="profile-icon"
-              />
+              <a href="">
+                <img
+                  src="./images/icons/basket.svg"
+                  alt="basket"
+                  class="basket-icon"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="./images/icons/profile.svg"
+                  alt="profile"
+                  class="profile-icon"
+                />
+              </a>
             </div>
           </div>
-          <div class="divider"></div>
+          <div class="header__divider"></div>
           <nav class="header__menu">
             <ul class="header__menu-list">
               <li class="header__menu-item">
@@ -78,13 +89,11 @@
         </div>
       </header>
       <main class="main">
-        <section class="section__hero">
-          <div class="hero">
-            <img
-              src="./images/hero-img.jpg"
-              alt="hero-img"
-              class="hero-image"
-            />
+        <section class="hero">
+          <div class="hero__image">
+            <img src="./images/hero-img.jpg" alt="image" class="hero__image" />
+          </div>
+          <div class="hero__content container">
             <div class="hero__info">
               <h2 class="hero-title">
                 Luxury homeware for people who <br />
@@ -93,7 +102,7 @@
               <p class="hero-description">
                 Shop the new Spring 2022 collection today
               </p>
-              <button class="hero__button">View collection</button>
+              <a class="hero__link" href="/">View collection</a>
             </div>
           </div>
         </section>
@@ -164,73 +173,82 @@
         </section>
         <section class="collection container">
           <ul class="collection__list">
-            <li class="collection__item">
-              <img
-                src="./images/chair.png"
-                alt="chair"
-                class="collection__icon"
-              />
-              <div class="collection__item-card">
-                <p>
-                  The Dandy chair <br />
-                  £250
-                </p>
-              </div>
-            </li>
-            <li class="collection__item">
-              <img
-                src="./images/vases.png"
-                alt="vases"
-                class="collection__icon"
-              />
-              <div class="collection__item-card">
-                <p>
-                  Rustic Vase Set <br />
-                  £155
-                </p>
-              </div>
-            </li>
-            <li class="collection__item">
-              <img
-                src="./images/vase.png"
-                alt="vase"
-                class="collection__icon"
-              />
-              <div class="collection__item-card">
-                <p>
-                  The Silky Vase <br />
-                  £125
-                </p>
-              </div>
-            </li>
-            <li class="collection__item">
-              <img
-                src="./images/lamp.png"
-                alt="lamp"
-                class="collection__icon"
-              />
-              <div class="collection__item-card">
-                <p>
-                  The Lucy Lamp <br />
-                  £399
-                </p>
-              </div>
-            </li>
+            <a href="/">
+              <li class="collection__item">
+                <img
+                  src="./images/chair.png"
+                  alt="chair"
+                  class="collection__icon"
+                />
+                <div class="collection__item-card">
+                  <p class="collection__text">
+                    The Dandy chair <br />
+                    £250
+                  </p>
+                </div>
+              </li>
+            </a>
+            <a href="/">
+              <li class="collection__item">
+                <img
+                  src="./images/vases.png"
+                  alt="vases"
+                  class="collection__icon"
+                />
+                <div class="collection__item-card">
+                  <p class="collection__text">
+                    Rustic Vase Set <br />
+                    £155
+                  </p>
+                </div>
+              </li>
+            </a>
+            <a href="/">
+              <li class="collection__item">
+                <img
+                  src="./images/vase.png"
+                  alt="vase"
+                  class="collection__icon"
+                />
+                <div class="collection__item-card">
+                  <p class="collection__text">
+                    The Silky Vase <br />
+                    £125
+                  </p>
+                </div>
+              </li>
+            </a>
+            <a href="/">
+              <li class="collection__item">
+                <img
+                  src="./images/lamp.png"
+                  alt="lamp"
+                  class="collection__icon"
+                />
+                <div class="collection__item-card">
+                  <p class="collection__text">
+                    The Lucy Lamp <br />
+                    £399
+                  </p>
+                </div>
+              </li>
+            </a>
           </ul>
-          <button class="collection__button button">View collection</button>
+          <a class="collection__link">View collection</a>
         </section>
         <section class="brand container">
           <div class="brand__info">
-            <h2 class="brand__title title">It started with a small idea</h2>
-            <p>
-              A global brand with local beginnings, our story begain in a <br />
-              small studio in South London in early 2014
-            </p>
+            <div class="brand__info-text">
+              <h2 class="brand__title title">It started with a small idea</h2>
+              <p>
+                A global brand with local beginnings, our story begain in a
+                <br />
+                small studio in South London in early 2014
+              </p>
+            </div>
             <button class="brand__button button">View collection</button>
           </div>
-          <div class="brand__image">
-            <img src="./images/brand.png" alt="room" />
-          </div>
+          <img class="brand__image" src="./images/brand.png" alt="room" />
         </section>
         <section class="sign-up">
           <div class="sign-up__image">
@@ -240,187 +258,192 @@
               class="sign-up__image"
             />
           </div>
-          <div class="sign-up__info">
-            <h2 class="sign-up__title">Join the club and get the benefits</h2>
-            <p class="sign-up__text">
-              Sign up for our newsletter and receive exclusive offers on <br />
-              new ranges, sales, pop up stores and more
-            </p>
-            <ul class="sign-up__list">
-              <li class="sign-up__item">
-                <img
-                  src="./images/icons/circle.svg"
-                  alt="circle"
-                  class="sign-up__icon"
-                />
-                <p class="sign-up__text">Exclusive offers</p>
-              </li>
-              <li class="sign-up__item">
-                <img
-                  src="./images/icons/circle.svg"
-                  alt="circle"
-                  class="sign-up__icon"
-                />
-                <p class="sign-up__text">Free events</p>
-              </li>
-              <li class="sign-up__item">
-                <img
-                  src="./images/icons/circle.svg"
-                  alt="circle"
-                  class="sign-up__icon"
-                />
-                <p class="sign-up__text">Large discounts</p>
-              </li>
-            </ul>
-          </div>
-          <form class="sign-up__form">
-            <div class="sign-up__body">
-              <div class="sign-up_field">
-                <input
-                  class="field__input"
-                  name="email"
-                  placeholder="your@email.com"
-                />
-              </div>
+          <div class="sign-up__content container">
+            <div class="sign-up__info">
+              <h2 class="sign-up__title">Join the club and get the benefits</h2>
+              <p class="sign-up__text">
+                Sign up for our newsletter and receive exclusive offers on
+                <br />
+                new ranges, sales, pop up stores and more
+              </p>
+              <ul class="sign-up__list">
+                <li class="sign-up__item">
+                  <img
+                    src="./images/icons/circle.svg"
+                    alt="circle"
+                    class="sign-up__icon"
+                  />
+                  <p>Exclusive offers</p>
+                </li>
+                <li class="sign-up__item">
+                  <img
+                    src="./images/icons/circle.svg"
+                    alt="circle"
+                    class="sign-up__icon"
+                  />
+                  <p>Free events</p>
+                </li>
+                <li class="sign-up__item">
+                  <img
+                    src="./images/icons/circle.svg"
+                    alt="circle"
+                    class="sign-up__icon"
+                  />
+                  <p>Large discounts</p>
+                </li>
+              </ul>
             </div>
-            <button class="sign-up__button">Sign up</button>
-          </form>
+            <form class="sign-up__form container">
+              <div class="sign-up__body">
+                <div class="sign-up__field">
+                  <input
+                    class="field__input"
+                    name="email"
+                    placeholder="your@email.com"
+                  />
+                </div>
+              </div>
+              <button class="sign-up__button">Sign up</button>
+            </form>
+          </div>
         </section>
       </main>
       <footer class="footer">
         <div class="footer__body container">
-          <div class="footer__info">
-            <div class="footer__logo">Avion</div>
-            <div class="footer__address">
-              21 New York Street <br />
-              New York City <br />
-              United States of America <br />
-              432 34
+          <div class="footer__content">
+            <div class="footer__info">
+              <div class="footer__info-text">
+                <div class="footer__logo">Avion</div>
+                <div class="footer__address">
+                  <p>21 New York Street</p>
+                  <p>New York City</p>
+                  <p>United States of America</p>
+                  <p>432 34</p>
+                </div>
+              </div>
+              <div class="footer__links">
+                <p class="links__text">Social links</p>
+                <ul class="footer__links-list">
+                  <li class="links-list__item">
+                    <a href="">
+                      <img
+                        src="./images/icons/linkedin.svg"
+                        alt="linkedin"
+                        class="footer__icon"
+                      />
+                    </a>
+                  </li>
+                  <li class="links-list__item">
+                    <a href="">
+                      <img
+                        src="./images/icons/facebook.svg"
+                        alt="facebook"
+                        class="footer__icon"
+                      />
+                    </a>
+                  </li>
+                  <li class="links-list__item">
+                    <a href="">
+                      <img
+                        src="./images/icons/instagram.svg"
+                        alt="instagram"
+                        class="footer__icon"
+                      />
+                    </a>
+                  </li>
+                  <li class="links-list__item">
+                    <a href="">
+                      <img
+                        src="./images/icons/skype.svg"
+                        alt="skype"
+                        class="footer__icon"
+                      />
+                    </a>
+                  </li>
+                  <li class="links-list__item">
+                    <a href="">
+                      <img
+                        src="./images/icons/twitter.svg"
+                        alt="twitter"
+                        class="footer__icon"
+                      />
+                    </a>
+                  </li>
+                  <li class="links-list__item">
+                    <a href="">
+                      <img
+                        src="./images/icons/pinterest.svg"
+                        alt="pinterest"
+                        class="footer__icon"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__lists">
+              <div class="footer__lists-all">
+                <a class="main__lists" href="">Menu</a>
+                <ul class="footer__menu-list">
+                  <li>
+                    <a class="footer__lists-item" href="/">New arrivals</a>
+                  </li>
+                  <li>
+                    <a class="footer__lists-item" href="/">Best sellers</a>
+                  </li>
+                  <li>
+                    <a class="footer__lists-item" href="/">Recently viewed</a>
+                  </li>
+                  <li>
+                    <a class="footer__lists-item" href="/">Popular this week</a>
+                  </li>
+                  <li>
+                    <a class="footer__lists-item" href="/">All products</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__lists-all">
+                <a class="main__lists" href="">Categories</a>
+                <ul class="footer__menu-list">
+                  <li>
+                    <a class="footer__lists-item" href="/">Crockery</a>
+                  </li>
+                  <li>
+                    <a class="footer__lists-item" href="/">Furniture</a>
+                  </li>
+                  <li>
+                    <a class="footer__lists-item" href="/">Homeware</a>
+                  </li>
+                  <li>
+                    <a class="footer__lists-item" href="/">Plant pots</a>
+                  </li>
+                  <li>
+                    <a class="footer__lists-item" href="/">Chairs</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__lists-all">
+                <a class="main__lists" href="">Our company</a>
+                <ul class="footer__menu-list">
+                  <li>
+                    <a class="footer__lists-item" href="/">About us</a>
+                  </li>
+                  <li>
+                    <a class="footer__lists-item" href="/">Vacancies</a>
+                  </li>
+                  <li>
+                    <a class="footer__lists-item" href="/">Contact us</a>
+                  </li>
+                  <li>
+                    <a class="footer__lists-item" href="/">Privacy</a>
+                  </li>
+                  <li>
+                    <a class="footer__lists-item" href="/">Returns policy</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="footer__links">
-            <p class="links__text">Social links</p>
-            <ul class="footer__links-list">
-              <li class="links-list__item">
-                <a href="">
-                  <img
-                    src="./images/icons/linkedin.svg"
-                    alt="linkedin"
-                    class="footer__icon"
-                  />
-                </a>
-              </li>
-              <li class="links-list__item">
-                <a href="">
-                  <img
-                    src="./images/icons/facebook.svg"
-                    alt="facebook"
-                    class="footer__icon"
-                  />
-                </a>
-              </li>
-              <li class="links-list__item">
-                <a href="">
-                  <img
-                    src="./images/icons/instagram.svg"
-                    alt="instagram"
-                    class="footer__icon"
-                  />
-                </a>
-              </li>
-              <li class="links-list__item">
-                <a href="">
-                  <img
-                    src="./images/icons/skype.svg"
-                    alt="skype"
-                    class="footer__icon"
-                  />
-                </a>
-              </li>
-              <li class="links-list__item">
-                <a href="">
-                  <img
-                    src="./images/icons/twitter.svg"
-                    alt="twitter"
-                    class="footer__icon"
-                  />
-                </a>
-              </li>
-              <li class="links-list__item">
-                <a href="">
-                  <img
-                    src="./images/icons/pinterest.svg"
-                    alt="pinterest"
-                    class="footer__icon"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__lists">
-            <div class="footer__lists-al">
-              <a class="main__lists" href="">Menu</a>
-              <ul class="footer__menu-list">
-                <li>
-                  <a class="footer__lists-item" href="/">New arrivals</a>
-                </li>
-                <li>
-                  <a class="footer__lists-item" href="/">Best sellers</a>
-                </li>
-                <li>
-                  <a class="footer__lists-item" href="/">Recently viewed</a>
-                </li>
-                <li>
-                  <a class="footer__lists-item" href="/">Popular this week</a>
-                </li>
-                <li>
-                  <a class="footer__lists-item" href="/">All products</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__lists-all">
-              <a class="main__lists" href="">Categories</a>
-              <ul class="footer__menu-list">
-                <li>
-                  <a class="footer__lists-item" href="/">Crockery</a>
-                </li>
-                <li>
-                  <a class="footer__lists-item" href="/">Furniture</a>
-                </li>
-                <li>
-                  <a class="footer__lists-item" href="/">Homeware</a>
-                </li>
-                <li>
-                  <a class="footer__lists-item" href="/">Plant pots</a>
-                </li>
-                <li>
-                  <a class="footer__lists-item" href="/">Chairs</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__lists-all">
-              <a class="main__lists" href="">Our company</a>
-              <ul class="footer__menu-list">
-                <li>
-                  <a class="footer__lists-item" href="/">About us</a>
-                </li>
-                <li>
-                  <a class="footer__lists-item" href="/">Vacancies</a>
-                </li>
-                <li>
-                  <a class="footer__lists-item" href="/">Contact us</a>
-                </li>
-                <li>
-                  <a class="footer__lists-item" href="/">Privacy</a>
-                </li>
-                <li>
-                  <a class="footer__lists-item" href="/">Returns policy</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="footer__legal container">
           <div class="footer__divider container"></div>
           <p class="footer__text">Copyright 2022 Avion LTD</p>
         </div>
