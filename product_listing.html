@@ -89,22 +89,117 @@
         </div>
       </header>
       <main class="main">
-        <section class="hero">
-          <div class="hero__image">
-            <img src="./images/hero-img.jpg" alt="image" class="hero__image" />
-          </div>
-          <div class="hero__content container">
-            <div class="hero__info">
-              <h2 class="hero-title">
-                Luxury homeware for people who <br />
-                love timeless design quality
-              </h2>
-              <p class="hero-description">
-                Shop the new Spring 2022 collection today
-              </p>
-              <a class="hero__link" href="/">View collection</a>
+        <section class="product">
+          <div class="product__content container">
+            <div class="product__main-image">
+              <img
+                src="./images/product__main-image.png"
+                alt="product__main-image"
+                class="product__main-image-chair"
+              />
+            </div>
+            <div class="product__main-info">
+              <h2 class="product__main-title">The Dandy Chair</h2>
+              <p class="product__main-price">£250</p>
+              <div class="product__divider"></div>
+              <p class="product__description-title">Product description</p>
+              <div class="product__description-text">
+                <p>
+                  A timeless design, with premium materials features as one of
+                  our
+                </p>
+                <p>
+                  most popular and iconic pieces. The dandy chair is perfect for
+                  any
+                </p>
+                <p>
+                  stylish living space with beech legs and lambskin leather
+                  upholstery.
+                </p>
+              </div>
+              <div class="product__table">
+                <p class="product__table-title">Dimensions</p>
+                <table>
+                  <tr>
+                    <td>Height</td>
+                    <td>Width</td>
+                    <td>Depth</td>
+                  </tr>
+
+                  <tr>
+                    <td>110cm</td>
+                    <td>75cm</td>
+                    <td>50cm</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="product__quantitity">
+                <input
+                  type="number"
+                  class="product__input"
+                  step="1"
+                  min="1"
+                  max=""
+                  value="1"
+                  pattern="[0-9]*"
+                  inputmode="numeric"
+                />
+              </div>
+              <div class="product__buttons">
+                <button class="product__button-dark button">Add to cart</button>
+                <button class="product__button-light button">
+                  Save to favorites
+                </button>
+              </div>
             </div>
           </div>
+        </section>
+        <section class="product__collection container">
+          <h2 class="product__collection-title container">
+            You might also love these
+          </h2>
+          <ul class="product__collection-list">
+            <a href="/">
+              <li class="product__collection-item-long">
+                <img
+                  src="./images/product__sofa.jpg"
+                  alt="vase"
+                  class="product__collection-icon-long"
+                />
+                <div class="product__collection__item-card">
+                  <p class="product__collection-text">The Silky Vase</p>
+                  <p class="collection-price">£125</p>
+                </div>
+              </li>
+            </a>
+            <a href="/">
+              <li class="product__collection-item">
+                <img
+                  src="./images/chair.png"
+                  alt="chair"
+                  class="product__collection-icon"
+                />
+                <div class="product__collection__item-card">
+                  <p class="product__collection-text">The Dandy chair</p>
+                  <p class="collection-price">£250</p>
+                </div>
+              </li>
+            </a>
+            <a href="/">
+              <li class="product__collection-item">
+                <img
+                  src="./images/product__chair.png"
+                  alt="vases"
+                  class="product__collection-icon"
+                />
+                <div class="product__collection__item-card">
+                  <p class="product__collection-text">Rustic Vase Set</p>
+                  <p class="collection-price">£250</p>
+                </div>
+              </li>
+            </a>
+          </ul>
+          <a class="product__collection-link">See collection</a>
         </section>
         <section class="advantages container">
           <h3 class="advantages__title">What makes our brand different</h3>
@@ -171,131 +266,34 @@
             </li>
           </ul>
         </section>
-        <section class="collection container">
-          <ul class="collection__list">
-            <a href="/">
-              <li class="collection__item">
-                <img
-                  src="./images/chair.png"
-                  alt="chair"
-                  class="collection__icon"
-                />
-                <div class="collection__item-card">
-                  <p class="collection__text">The Dandy chair</p>
-                  <p class="collection-price">£250</p>
-                </div>
-              </li>
-            </a>
-            <a href="/">
-              <li class="collection__item">
-                <img
-                  src="./images/vases.png"
-                  alt="vases"
-                  class="collection__icon"
-                />
-                <div class="collection__item-card">
-                  <p class="collection__text">Rustic Vase Set</p>
-                  <p class="collection-price">£155</p>
-                </div>
-              </li>
-            </a>
-            <a href="/">
-              <li class="collection__item">
-                <img
-                  src="./images/vase.png"
-                  alt="vase"
-                  class="collection__icon"
-                />
-                <div class="collection__item-card">
-                  <p class="collection__text">The Silky Vase</p>
-                  <p class="collection-price">£125</p>
-                </div>
-              </li>
-            </a>
-            <a href="/">
-              <li class="collection__item">
-                <img
-                  src="./images/lamp.png"
-                  alt="lamp"
-                  class="collection__icon"
-                />
-                <div class="collection__item-card">
-                  <p class="collection__text">The Lucy Lamp</p>
-                  <p class="collection-price">£399</p>
-                </div>
-              </li>
-            </a>
-          </ul>
-          <a class="collection__link">View collection</a>
-        </section>
-        <section class="brand container">
-          <div class="brand__info">
-            <div class="brand__info-text">
-              <h2 class="brand__title title">It started with a small idea</h2>
-              <p>
-                A global brand with local beginnings, our story begain in a
-                <br />
-                small studio in South London in early 2014
-              </p>
-            </div>
-            <button class="brand__button button">View collection</button>
-          </div>
-          <img class="brand__image" src="./images/brand.png" alt="room" />
-        </section>
-        <section class="sign-up">
-          <div class="sign-up__image">
+        <section class="product__sign-up">
+          <div class="product__sign-up__image">
             <img
-              src="./images/sign-up_background.jpg"
-              alt="background"
-              class="sign-up__image"
+              src="./images/product_image.png"
+              alt="product image"
+              class="product__image"
             />
           </div>
-          <div class="sign-up__content container">
-            <div class="sign-up__info">
-              <h2 class="sign-up__title">Join the club and get the benefits</h2>
-              <p class="sign-up__text">
+          <div class="product__sign-up__content">
+            <div class="product__info">
+              <h2 class="product__title">Join the club and get the benefits</h2>
+              <p class="product__text">
                 Sign up for our newsletter and receive exclusive offers on
                 <br />
                 new ranges, sales, pop up stores and more
               </p>
-              <ul class="sign-up__list">
-                <li class="sign-up__item">
-                  <img
-                    src="./images/icons/circle.svg"
-                    alt="circle"
-                    class="sign-up__icon"
-                  />
-                  <p>Exclusive offers</p>
-                </li>
-                <li class="sign-up__item">
-                  <img
-                    src="./images/icons/circle.svg"
-                    alt="circle"
-                    class="sign-up__icon"
-                  />
-                  <p>Free events</p>
-                </li>
-                <li class="sign-up__item">
-                  <img
-                    src="./images/icons/circle.svg"
-                    alt="circle"
-                    class="sign-up__icon"
-                  />
-                  <p>Large discounts</p>
-                </li>
-              </ul>
             </div>
-            <form class="sign-up__form container">
-              <div class="sign-up__body">
-                <div class="sign-up__field">
+            <form class="product__sign-up__form">
+              <div class="product__body">
+                <div class="product__field">
                   <input
-                    class="field__input"
+                    class="product__field-input"
                     name="email"
                     placeholder="your@email.com"
                   />
                 </div>
               </div>
-              <button class="sign-up__button">Sign up</button>
+              <button class="product__button">Sign up</button>
             </form>
           </div>
         </section>
