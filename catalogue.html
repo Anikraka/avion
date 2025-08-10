@@ -89,215 +89,229 @@
         </div>
       </header>
       <main class="main">
-        <section class="product">
-          <div class="product__content container">
-            <div class="product__main-image">
-              <img
-                src="./images/product__main-image.png"
-                alt="product__main-image"
-                class="product__main-image-chair"
-              />
+        <section class="catalogue__hero">
+          <div class="catalogue__hero-image">
+            <img
+              src="./images/catalogue_hero.jpg"
+              alt="background"
+              class="catalogue__hero-background-image"
+            />
+          </div>
+          <div class="catalogue__content container">
+            <h1 class="catalogut__content-title">All products</h1>
+          </div>
+        </section>
+        <section class="catalogue__filters">
+          <div class="catalogue__filters-content">
+            <div class="catalogue__filters-main-content">
+              <ul class="catalogue__filters-main-list">
+                <li class="catalogue__filters-item">
+                  <a class="catalogue__filters-link" href="">Category</a>
+                  <button class="catalogue__filters-lists-button">
+                    <img src="./images/icons/catalogue_button.svg" alt="" />
+                  </button>
+                </li>
+                <li class="catalogue__filters-item">
+                  <a class="catalogue__filters-link" href="">Product type</a>
+                  <button class="catalogue__filters-lists-button">
+                    <img src="./images/icons/catalogue_button.svg" alt="" />
+                  </button>
+                </li>
+                <li class="catalogue__filters-item">
+                  <a class="catalogue__filters-link" href="">Price</a>
+                  <button class="catalogue__filters-lists-button">
+                    <img src="./images/icons/catalogue_button.svg" alt="" />
+                  </button>
+                </li>
+                <li class="catalogue__filters-item">
+                  <a class="catalogue__filters-link" href="">Brand</a>
+                  <button class="catalogue__filters-lists-button">
+                    <img src="./images/icons/catalogue_button.svg" alt="" />
+                  </button>
+                </li>
+              </ul>
             </div>
-            <div class="product__main-info">
-              <h2 class="product__main-title">The Dandy Chair</h2>
-              <p class="product__main-price">£250</p>
-              <div class="product__divider"></div>
-              <p class="product__description-title">Product description</p>
-              <div class="product__description-text">
-                <p>
-                  A timeless design, with premium materials features as one of
-                  our
-                </p>
-                <p>
-                  most popular and iconic pieces. The dandy chair is perfect for
-                  any
-                </p>
-                <p>
-                  stylish living space with beech legs and lambskin leather
-                  upholstery.
-                </p>
-              </div>
-              <div class="product__table">
-                <p class="product__table-title">Dimensions</p>
-                <div class="product__table-items">
-                  <div class="product__table-item">
-                    <p class="product__table-details">Height</p>
-                    <p>110cm</p>
-                  </div>
-                  <div class="product__table-item">
-                    <p class="product__table-details">Width</p>
-                    <p>75cm</p>
-                  </div>
-                  <div class="product__table-item">
-                    <p class="product__table-details">Depth</p>
-                    <p>50cm</p>
-                  </div>
-                </div>
-              </div>
-              <div class="product__quantitity">
-                <p class="product__quantitity-title">Quantitity</p>
-                <input
-                  type="number"
-                  class="product__input"
-                  step="1"
-                  min="1"
-                  max=""
-                  value="1"
-                  pattern="[0-9]*"
-                  inputmode="numeric"
-                />
-              </div>
-              <div class="product__buttons">
-                <button class="product__button-dark button">Add to cart</button>
-                <button class="product__button-light button">
-                  Save to favorites
-                </button>
-              </div>
+            <div class="catalogue__filters-sorting">
+              <p class="catalogue__filters-sorting-text">Sorting by:</p>
+              <ul class="catalogue__filters-list">
+                <li class="catalogue__filters-item">
+                  <p class="catalogue__filters-text">Date added</p>
+                  <button class="catalogue__filters-lists-button">
+                    <img src="./images/icons/catalogue_button.svg" alt="" />
+                  </button>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
-        <section class="product__collection container">
-          <h2 class="product__collection-title container">
-            You might also love these
-          </h2>
-          <ul class="product__collection-list">
+        <section class="collection container">
+          <ul class="collection__list">
             <a href="/">
-              <li class="product__collection-item-long">
+              <li class="collection__item">
                 <img
-                  src="./images/product__sofa.jpg"
-                  alt="vase"
-                  class="product__collection-icon-long"
+                  src="./images/chair.png"
+                  alt="chair"
+                  class="collection__icon"
                 />
-                <div class="product__collection__item-card">
-                  <p class="product__collection-text">The Silky Vase</p>
+                <div class="collection__item-card">
+                  <p class="collection__text">The Dandy chair</p>
+                  <p class="collection-price">£250</p>
+                </div>
+              </li>
+            </a>
+            <a href="/">
+              <li class="collection__item">
+                <img
+                  src="./images/vases.png"
+                  alt="vases"
+                  class="collection__icon"
+                />
+                <div class="collection__item-card">
+                  <p class="collection__text">Rustic Vase Set</p>
+                  <p class="collection-price">£155</p>
+                </div>
+              </li>
+            </a>
+            <a href="/">
+              <li class="collection__item">
+                <img
+                  src="./images/vase.png"
+                  alt="vase"
+                  class="collection__icon"
+                />
+                <div class="collection__item-card">
+                  <p class="collection__text">The Silky Vase</p>
                   <p class="collection-price">£125</p>
                 </div>
               </li>
             </a>
             <a href="/">
-              <li class="product__collection-item">
+              <li class="collection__item">
                 <img
-                  src="./images/chair.png"
-                  alt="chair"
-                  class="product__collection-icon"
+                  src="./images/lamp.png"
+                  alt="lamp"
+                  class="collection__icon"
                 />
-                <div class="product__collection__item-card">
-                  <p class="product__collection-text">The Dandy chair</p>
+                <div class="collection__item-card">
+                  <p class="collection__text">The Lucy Lamp</p>
+                  <p class="collection-price">£399</p>
+                </div>
+              </li>
+            </a>
+          </ul>
+        </section>
+        <section class="collection container">
+          <ul class="collection__list">
+            <a href="/">
+              <li class="collection__item">
+                <img
+                  src="./images/catalogue-1.png"
+                  alt="chair"
+                  class="collection__icon"
+                />
+                <div class="collection__item-card">
+                  <p class="collection__text">The Dandy chair</p>
                   <p class="collection-price">£250</p>
                 </div>
               </li>
             </a>
             <a href="/">
-              <li class="product__collection-item">
+              <li class="collection__item">
                 <img
-                  src="./images/product__chair.png"
+                  src="./images/catalogue-2.png"
                   alt="vases"
-                  class="product__collection-icon"
+                  class="collection__icon"
                 />
-                <div class="product__collection__item-card">
-                  <p class="product__collection-text">Rustic Vase Set</p>
-                  <p class="collection-price">£250</p>
+                <div class="collection__item-card">
+                  <p class="collection__text">Rustic Vase Set</p>
+                  <p class="collection-price">£155</p>
+                </div>
+              </li>
+            </a>
+            <a href="/">
+              <li class="collection__item">
+                <img
+                  src="./images/catalogue-3.png"
+                  alt="vase"
+                  class="collection__icon"
+                />
+                <div class="collection__item-card">
+                  <p class="collection__text">The Silky Vase</p>
+                  <p class="collection-price">£125</p>
+                </div>
+              </li>
+            </a>
+            <a href="/">
+              <li class="collection__item">
+                <img
+                  src="./images/catalogue-4.png"
+                  alt="lamp"
+                  class="collection__icon"
+                />
+                <div class="collection__item-card">
+                  <p class="collection__text">The Lucy Lamp</p>
+                  <p class="collection-price">£399</p>
                 </div>
               </li>
             </a>
           </ul>
-          <a class="product__collection-link">See collection</a>
         </section>
-        <section class="advantages container">
-          <h3 class="advantages__title">What makes our brand different</h3>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <img
-                src="./images/icons/delivery-black.svg"
-                alt="delivery"
-                class="advantages__icon"
-              />
-              <h2 class="advantages__item-title">Next day as standard</h2>
-              <div class="advantages__item-card">
-                <p>
-                  Order before 3pm and get <br />
-                  your order the next day as <br />
-                  standard
-                </p>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <img
-                src="./images/icons/checkmark.svg"
-                alt="checkmark"
-                class="advantages__icon"
-              />
-              <h2 class="advantages__item-title">Made by true artisans</h2>
-              <div class="advantages__item-card">
-                <p>
-                  Handmade crafted goods <br />
-                  made with real passion and <br />
-                  craftmanship
-                </p>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <img
-                src="./images/icons/card.svg"
-                alt="card"
-                class="advantages__icon"
-              />
-              <h2 class="advantages__item-title">Unbeatable prices</h2>
-              <div class="advantages__item-card">
-                <p>
-                  For our materials and quality <br />
-                  you won’t find better prices <br />
-                  anywhere
-                </p>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <img
-                src="./images/icons/plant.svg"
-                alt="plant"
-                class="advantages__icon"
-              />
-              <h2 class="advantages__item-title">Recycled packaging</h2>
-              <div class="advantages__item-card">
-                <p>
-                  We use 100% recycled to <br />
-                  ensure our footprint is more <br />
-                  manageable
-                </p>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <section class="product__sign-up">
-          <div class="product__sign-up__image">
-            <img
-              src="./images/product_image.png"
-              alt="product image"
-              class="product__image"
-            />
-          </div>
-          <div class="product__sign-up__content">
-            <div class="product__info">
-              <h2 class="product__title">Join the club and get the benefits</h2>
-              <p class="product__text">
-                Sign up for our newsletter and receive exclusive offers on
-                <br />
-                new ranges, sales, pop up stores and more
-              </p>
-            </div>
-            <form class="product__sign-up__form">
-              <div class="product__body">
-                <div class="product__field">
-                  <input
-                    class="product__field-input"
-                    name="email"
-                    placeholder="your@email.com"
-                  />
+        <section class="collection container">
+          <ul class="collection__list">
+            <a href="/">
+              <li class="collection__item">
+                <img
+                  src="./images/chair.png"
+                  alt="chair"
+                  class="collection__icon"
+                />
+                <div class="collection__item-card">
+                  <p class="collection__text">The Dandy chair</p>
+                  <p class="collection-price">£250</p>
                 </div>
-              </div>
-              <button class="product__button">Sign up</button>
-            </form>
-          </div>
+              </li>
+            </a>
+            <a href="/">
+              <li class="collection__item">
+                <img
+                  src="./images/vases.png"
+                  alt="vases"
+                  class="collection__icon"
+                />
+                <div class="collection__item-card">
+                  <p class="collection__text">Rustic Vase Set</p>
+                  <p class="collection-price">£155</p>
+                </div>
+              </li>
+            </a>
+            <a href="/">
+              <li class="collection__item">
+                <img
+                  src="./images/vase.png"
+                  alt="vase"
+                  class="collection__icon"
+                />
+                <div class="collection__item-card">
+                  <p class="collection__text">The Silky Vase</p>
+                  <p class="collection-price">£125</p>
+                </div>
+              </li>
+            </a>
+            <a href="/">
+              <li class="collection__item">
+                <img
+                  src="./images/lamp.png"
+                  alt="lamp"
+                  class="collection__icon"
+                />
+                <div class="collection__item-card">
+                  <p class="collection__text">The Lucy Lamp</p>
+                  <p class="collection-price">£399</p>
+                </div>
+              </li>
+            </a>
+          </ul>
+          <a class="collection__link">View collection</a>
         </section>
       </main>
       <footer class="footer">

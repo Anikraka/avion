@@ -764,16 +764,34 @@ input::placeholder {
 }
 
 .product__table-title {
+  padding-top: 32px;
   padding-bottom: 24px;
 }
 
-.table {
+.product__table-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 36px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-.tr {
+.product__table-details {
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 15px;
 }
 
-.td {
+.product__table-item {
+  border-right: 1px solid;
+  border-color: #ebe8f4;
+  max-width: 98px;
+  width: 100%;
+}
+
+.product__quantitity-title {
+  padding-bottom: 12px;
 }
 
 .product__quantitity {
@@ -783,10 +801,229 @@ input::placeholder {
 }
 
 .product__buttons {
+  display: flex;
+  gap: 16px;
+  padding-top: 46px;
 }
 
 .product__button-dark {
+  background-color: #2a254b;
+  color: #ffffff;
+  width: 145px;
+  height: 56px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
 }
 
 .product__button-light {
+  background-color: #ffffff;
+  color: #2a254b;
+  width: 184px;
+  height: 56px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.catalogue__hero {
+  position: relative;
+}
+
+.catalogue__hero-image {
+}
+
+.catalogue__hero-background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.catalogue__content {
+  position: relative;
+  width: 100%;
+  padding-top: 123px;
+  padding-bottom: 36px;
+}
+
+.catalogut__content-title {
+  font-weight: 700;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.catalogue__filters {
+  max-width: 1392px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.catalogue__filters-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.catalogue__filters-main-content {
+}
+
+.catalogue__filters-main-list {
+  display: flex;
+  flex-direction: row;
+  gap: 52px;
+}
+
+.catalogue__filters-item {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.catalogue__filters-link {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.catalogue__filters-lists-button {
+  background-color: #ffffff;
+  color: #2a254b;
+  width: 16px;
+  height: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.catalogue__filters-sorting {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.catalogue__filters-sorting-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #2a254b;
+}
+
+.catalogue__filters-list {
+}
+
+.catalogue__filters-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #2a254b;
+}
+
+.basket {
+  background-color: #fafafa;
+}
+
+.shopping-cart-container {
+  width: calc(100% - 376px);
+  max-width: 1064px;
+  display: flex;
+  justify-self: center;
+}
+
+.basket__content {
+  padding: 64px 0 48px 0;
+}
+
+.basket__content-title {
+  margin: 0;
+  padding-bottom: 48px;
+  font-weight: 700;
+  font-size: 36px;
+  color: #2a254b;
+}
+
+.basket__content-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 14px;
+  padding-bottom: 12px;
+  color: #2a254b;
+}
+
+.basket__divider {
+  width: calc(100% - 376px);
+  height: 1px;
+  background-color: #0000001a;
+  display: flex;
+  justify-self: center;
+}
+
+.basket__content-list {
+  padding: 20px 0 32px 0;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.basket__content-product {
+  display: flex;
+  flex-direction: row;
+}
+
+.basket__content-image {
+}
+
+.basket__content-product-card {
+}
+
+.basket__content-product-title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #2a254b;
+}
+
+.basket__content-product-description {
+  font-weight: 400;
+  font-size: 14px;
+  color: #2a254b;
+}
+
+.basket__content-product-info {
+}
+
+.basket__content-product-price {
+  font-weight: 400;
+  font-size: 16px;
+  color: #2a254b;
+}
+
+.basket__content-quantity {
+  font-weight: 400;
+  font-size: 16px;
+  color: #2a254b;
+}
+
+.basket__content-product-total {
+  font-weight: 400;
+  font-size: 18px;
+  color: #2a254b;
+}
+
+.basket__content-subtotal {
+}
+
+.basket__content-subtotal-info {
+}
+
+.basket__content-subtotal-title {
+}
+
+.basket__content-subtotal-price {
+}
+
+.basket__content-subtotal-description {
+}
+
+.basket__content-button {
 }
