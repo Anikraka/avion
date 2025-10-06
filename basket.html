@@ -95,51 +95,75 @@
               Your shopping cart
             </h1>
             <div class="basket__content-text shopping-cart-container">
-              <p>Product</p>
-              <p>Quantity</p>
-              <p>Total</p>
+              <p class="basket__product-col">Product</p>
+              <p class="basket__quantity-col">Quantity</p>
+              <p class="basket__total-col">Total</p>
             </div>
             <div class="basket__divider"></div>
             <div class="basket__content-list shopping-cart-container">
               <div class="basket__content-product">
-                <img
-                  src="./images/basket-1.png"
-                  alt="graystone vase"
-                  class="basket__content-image"
-                />
-                <div class="basket__content-product-card">
-                  <h4 class="basket__content-product-title">Graystone vase</h4>
-                  <p class="basket__content-product-description">
-                    A timeless ceramic vase with <br />
-                    a tri color grey glaze.
-                  </p>
-                  <p class="basket__content-product-price">£85</p>
+                <div class="basket__product-col">
+                  <img
+                    src="./images/basket-1.png"
+                    alt="graystone vase"
+                    class="basket__content-image"
+                  />
+                  <div class="basket__content-product-card">
+                    <h4 class="basket__content-product-title">
+                      Graystone vase
+                    </h4>
+                    <p class="basket__content-product-description">
+                      A timeless ceramic vase with <br />
+                      a tri color grey glaze.
+                    </p>
+                    <p class="basket__content-product-price">£85</p>
+                  </div>
                 </div>
-                <div class="basket__content-product-info">
-                  <p class="basket__content-quantity">1</p>
-                  <p class="basket__content-product-total">£85</p>
+                <div class="product__quantitity-basket">
+                  <button class="input__button">-</button>
+                  <input
+                    type="number"
+                    class="product__input"
+                    min="1"
+                    value="1"
+                  />
+                  <button class="input__button">+</button>
                 </div>
+                <p class="basket__content-product-total basket__total-col">
+                  £85
+                </p>
               </div>
               <div class="basket__content-product">
-                <img
-                  src="./images/basker-2.png"
-                  alt="white vase"
-                  class="basket__content-image"
-                />
-                <div class="basket__content-product-card">
-                  <h4 class="basket__content-product-title">
-                    Basic white vase
-                  </h4>
-                  <p class="basket__content-product-description">
-                    Beautiful and simple this is <br />
-                    one for the classics
-                  </p>
-                  <p class="basket__content-product-price">£125</p>
+                <div class="basket__product-col">
+                  <img
+                    src="./images/basker-2.png"
+                    alt="white vase"
+                    class="basket__content-image"
+                  />
+                  <div class="basket__content-product-card">
+                    <h4 class="basket__content-product-title">
+                      Basic white vase
+                    </h4>
+                    <p class="basket__content-product-description">
+                      Beautiful and simple this is <br />
+                      one for the classics
+                    </p>
+                    <p class="basket__content-product-price">£125</p>
+                  </div>
                 </div>
-                <div class="basket__content-product-info">
-                  <p class="basket__content-quantity">1</p>
-                  <p class="basket__content-product-total">£125</p>
+                <div class="product__quantitity-basket">
+                  <button class="input__button">-</button>
+                  <input
+                    type="number"
+                    class="product__input"
+                    min="1"
+                    value="1"
+                  />
+                  <button class="input__button">+</button>
                 </div>
+                <p class="basket__content-product-total basket__total-col">
+                  £125
+                </p>
               </div>
             </div>
             <div class="basket__divider"></div>

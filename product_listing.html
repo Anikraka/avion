@@ -120,7 +120,7 @@
               <div class="product__table">
                 <p class="product__table-title">Dimensions</p>
                 <div class="product__table-items">
-                  <div class="product__table-item">
+                  <div class="product__table-item-first">
                     <p class="product__table-details">Height</p>
                     <p>110cm</p>
                   </div>
@@ -134,18 +134,11 @@
                   </div>
                 </div>
               </div>
+              <p class="product__quantitity-title">Quantitity</p>
               <div class="product__quantitity">
-                <p class="product__quantitity-title">Quantitity</p>
-                <input
-                  type="number"
-                  class="product__input"
-                  step="1"
-                  min="1"
-                  max=""
-                  value="1"
-                  pattern="[0-9]*"
-                  inputmode="numeric"
-                />
+                <button class="input__button">-</button>
+                <input type="number" class="product__input" min="1" value="1" />
+                <button class="input__button">+</button>
               </div>
               <div class="product__buttons">
                 <button class="product__button-dark button">Add to cart</button>

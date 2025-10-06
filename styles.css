@@ -771,7 +771,7 @@ input::placeholder {
 .product__table-items {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: start;
   padding-bottom: 36px;
   font-weight: 400;
   font-size: 16px;
@@ -786,6 +786,20 @@ input::placeholder {
 .product__table-item {
   border-right: 1px solid;
   border-color: #ebe8f4;
+  max-width: 137px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product__table-item:last-child {
+  border-right: none;
+}
+
+.product__table-item-first {
+  border-right: 1px solid;
+  border-color: #ebe8f4;
   max-width: 98px;
   width: 100%;
 }
@@ -794,10 +808,48 @@ input::placeholder {
   padding-bottom: 12px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .product__quantitity {
+  max-width: 122px;
+  display: flex;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.input__button {
+  padding: 12px 16px;
+  text-align: center;
+  color: #ebe8f4;
+  cursor: pointer;
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  list-style: none outside none;
+  margin: 0;
+  text-decoration: none;
+  text-indent: 0;
 }
 
 .product__input {
+  max-width: 48px;
+  color: #2a254b;
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0;
 }
 
 .product__buttons {
@@ -864,17 +916,26 @@ input::placeholder {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .catalogue__filters-main-content {
 }
 
 .catalogue__filters-main-list {
+  position: relative;
   display: flex;
   flex-direction: row;
-  gap: 52px;
+  gap: 12px;
+}
+
+.catalogue__filters-link::after {
+  content: "▾";
+  position: absolute;
+  right: 0;
+  margin-top: -2px;
+  pointer-events: none;
 }
 
 .catalogue__filters-item {
@@ -886,15 +947,9 @@ input::placeholder {
 .catalogue__filters-link {
   font-weight: 400;
   font-size: 16px;
-}
-
-.catalogue__filters-lists-button {
-  background-color: #ffffff;
-  color: #2a254b;
-  width: 16px;
-  height: 16px;
+  appearance: none;
+  padding: 12px 48px 12px 24px;
   border: none;
-  cursor: pointer;
 }
 
 .catalogue__filters-sorting {
@@ -942,13 +997,32 @@ input::placeholder {
 }
 
 .basket__content-text {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   font-weight: 700;
   font-size: 14px;
   padding-bottom: 12px;
   color: #2a254b;
+}
+
+.basket__product-col {
+  width: 38%;
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+}
+
+.basket__quantity-col {
+  width: 33%;
+  display: flex;
+  justify-content: end;
+}
+
+.basket__total-col {
+  width: 30%;
+  display: flex;
+  justify-content: end;
 }
 
 .basket__divider {
@@ -969,27 +1043,30 @@ input::placeholder {
 .basket__content-product {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 .basket__content-image {
 }
 
 .basket__content-product-card {
+  max-width: 186px;
+  width: 100%;
 }
 
 .basket__content-product-title {
   font-weight: 700;
   font-size: 20px;
   color: #2a254b;
+  padding-bottom: 8px;
 }
 
 .basket__content-product-description {
   font-weight: 400;
   font-size: 14px;
   color: #2a254b;
-}
-
-.basket__content-product-info {
+  line-height: 150%;
+  padding-bottom: 8px;
 }
 
 .basket__content-product-price {
@@ -1011,19 +1088,52 @@ input::placeholder {
 }
 
 .basket__content-subtotal {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 
 .basket__content-subtotal-info {
+  padding-top: 28px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
 }
 
 .basket__content-subtotal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: #4e4d93;
+  align-self: flex-end;
 }
 
 .basket__content-subtotal-price {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: #2a254b;
 }
 
 .basket__content-subtotal-description {
+  padding-top: 12px;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #4e4d93;
 }
 
 .basket__content-button {
+  background-color: #2a254b;
+  color: #ffffff;
+}
+
+.product__quantitity-basket {
+  padding-top: 12px;
+  max-height: 46px;
+  width: 60%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
